@@ -1,0 +1,188 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #DDEEFF;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  font-size:  0.875rem;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+}
+
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+p{
+  color: dimgray;
+  margin-bottom: 0;
+}
+
+.title h2{
+  font-size: 2rem;
+  color: goldenrod;
+  margin-bottom: 20px;
+}
+
+.title::after{
+  display: block;
+  content: "";
+  height: 4px;
+  background-color: #015B7E;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+
+/* 
+=============== 
+img
+===============
+ */
+/* 
+.girl{
+   width: 250px;
+ }
+
+ @media screen and (max-width: 800px) {
+  
+  .girl{
+    width: 180px;
+  }
+
+ }
+
+ .btn{
+   margin: 0.5rem;
+ } */
+
+/* 
+=============== 
+Nav
+===============
+ */
+
+nav{
+  width: 100vw;
+  background-color: white;
+  box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.nav-center{
+  height: 3rem;
+  width: 90vw;
+  max-width: 620px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.nav-center h1{
+  font-size: 1.2rem;
+  color:  #7AB398;
+}
+
+/*
+=============== 
+section
+===============
+*/
+.section-center{
+  max-width: 620px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+/*
+=============== 
+article
+===============
+*/
+
+.question{
+  text-align: left;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding: 1.5rem 1.5rem 0pt 1.5rem;
+}
+
+
+.question-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  letter-spacing: 0.25;
+}
+
+.question-text{
+  border-top: 1px solid rgb(158, 154, 154);
+  padding: 1rem 1.5rem 1.5rem 0; 
+}
+
+/* hide text */
+.question-text {
+  display: none;
+}
+
+.minus-icon {
+  display: none;
+}
+
+/* show text */
+
+.show-text .question-text {
+  display: block;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
+/*
+=============== 
+button
+===============
+*/
+
+.question-btn{
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: goldenrod;
+}
+
+.question-btn:hover{
+  transform: rotate(90deg);
+}
+
+.minus-icon{
+  display: none;
+}
